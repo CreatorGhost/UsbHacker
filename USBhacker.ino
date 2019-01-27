@@ -143,7 +143,7 @@ void STRING(char *txt){
             buf[2] = 0x34;
         }
          else if(*txt == '\\'){
-            buf[2] = 0x64;
+            buf[2] = 0x31;
         }
         else if(*txt == ' '){
             buf[2] = KEY_SPC;
@@ -156,10 +156,10 @@ void STRING(char *txt){
             buf[0] = KEY_LEFT_SHIFT;
             buf[2] = KEY_NONE;
         }
-        else if(*txt == '<'){
-            buf[0] = KEY_LEFT_SHIFT;
-            buf[2] = 0x36;
-        }
+        //else if(*txt == '<'){      // for <
+          //  buf[0] = KEY_LEFT_SHIFT;
+          //  buf[2] = 0x36;
+        //}
         else if(*txt == '/'){
             buf[2] = 0x38;
         }
